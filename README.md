@@ -1,6 +1,16 @@
+This repo contains some tools to convolve the Moderna mRNA sequence with the MERS, SARS and SARS2 virus sequence, and then visualize the best matches.
+
+
+
 Matches between the Moderna mRNA sequence and the SARS-CoV-2 RNA.
 
 ```
+$ time python3 code/convolve.py data/moderna_mrna1273.dna data/sars2.dna
+21440 1946
+
+real    0m55.264s
+user    0m54.355s
+sys     0m0.184s
 $ python3 code/matches.py data/moderna_mrna1273.dna data/sars2.dna 21440
 g-gaaa--a-----------a-----ag------t-t------c----------ac-atgtt-gt-tt-ct-gt--t--t
 gcc-ct-gt----ag-cagtg-gt-aa-ct-ac-acc-g-ac-ca--t-cc-cc-gc-tacac-aa----ttcac-cg-g
